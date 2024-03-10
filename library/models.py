@@ -8,5 +8,4 @@ class Author(models.Model):
 class Book(models.Model):
     title = models.CharField(max_length=255)
     author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True)
-    author_old = models.IntegerField()
 
