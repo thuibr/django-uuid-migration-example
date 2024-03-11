@@ -7,7 +7,7 @@ from django.db import migrations, models
 def populate_uuids(apps, schema_editor):
     Author = apps.get_model("library", "Author")
     for row in Author.objects.all():
-        row.uuid = uuid.uui4()
+        row.uuid = uuid.uuid4()
         row.save(update_fields=["uuid"])
 
 def populate_author(apps, schema_editor):
