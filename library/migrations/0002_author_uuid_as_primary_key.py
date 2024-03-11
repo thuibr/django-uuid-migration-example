@@ -19,8 +19,6 @@ def populate_author(apps, schema_editor):
 
 class Migration(migrations.Migration):
 
-    replaces = [('library', '0002_author_uuid'), ('library', '0003_populate_uuids'), ('library', '0004_alter_book_author'), ('library', '0005_alter_author_id_alter_author_uuid'), ('library', '0006_rename_author_book_author_old'), ('library', '0007_book_author'), ('library', '0008_auto_20240310_1242'), ('library', '0009_remove_author_id'), ('library', '0010_rename_uuid_author_id'), ('library', '0011_remove_book_author_old'), ('library', '0012_alter_book_author')]
-
     dependencies = [
         ('library', '0001_initial'),
     ]
